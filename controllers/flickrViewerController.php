@@ -1,14 +1,14 @@
 <?php
-    class FlickrViewerController {
+	class FlickrViewerController {
 
-        private $model;
+		private $model;
 
-        public function __construct($model) {
-            $this->model = $model;
-        }
+		public function __construct($model) {
+			$this->model = $model;
+		}
 
-        public function search($request) {
-            $this->model->search($request['tags']);
-        }
-    }
+		public function search($request) {
+			$this->model->search($request['tags']);
+		}
+	}
 ?>

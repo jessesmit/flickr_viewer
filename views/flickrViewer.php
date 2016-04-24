@@ -1,18 +1,18 @@
 <?php
 
 	#View class for displaying a list of images from the Flickr servers.
-    class FlickrViewerView {
-        private $flickr;
+	class FlickrViewerView {
+		private $flickr;
 
-        public function __construct(Flickr $flickr) {
-            $this->flickr = $flickr;
+		public function __construct(Flickr $flickr) {
+			$this->flickr = $flickr;
 			
-        }
+		}
 
 		#Function for rendering view
-        public function output() {
+		public function output() {
 			
-            $html = "";
+			$html = "";
 			
 			if ($this->flickr->getSearchTerm() === "") {
 				$html = '<div class="fv-no-results"><p>
@@ -31,20 +31,19 @@
 						 	Showing top results for "' . $this->flickr->getSearchTerm()
 						. '" (' . $this->flickr->getTotalResults() 
 						. ' images found in total):</p></div>';
-        
-	            foreach($this->flickr->getPhotos() as $index=>$photo) {
 
-	                $html .= "<a href='" . $photo['fullImage'] . "'>"
-						  . "<img class='fv-thumbnail' "
-	                      . "src='" . $photo['thumbnail'] . "' "
-						  . "alt='" . $photo['title'] . "' "
-	                      . "/></a>";
-					
-	            }
+				foreach($this->flickr->getPhotos() as $index=>$photo) {
+
+					$html .= "<a href='" . $photo['fullImage'] . "'>"
+							  . "<img class='fv-thumbnail' "
+							  . "src='" . $photo['thumbnail'] . "' "
+							  . "alt='" . $photo['title'] . "' "
+							  . "/></a>";
+				}
 			}
 
-            return $html;     
+			return $html;
 
-        }
-    }
+		}
+	}
 ?>

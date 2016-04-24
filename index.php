@@ -18,17 +18,17 @@
 		<div class='row'>
 <?php 
 
-    require_once('views/flickrViewer.php');
-    require_once('models/flickr.php');
-    require_once('controllers/flickrViewerController.php');
+	require_once('views/flickrViewer.php');
+	require_once('models/flickr.php');
+	require_once('controllers/flickrViewerController.php');
 
-    $flickrModel = new Flickr();
-    $flickrViewerController = new FlickrViewerController($flickrModel);
-    
-    if (isset($_GET['action'])) $flickrViewerController->{$_GET['action']}($_POST);
+	$flickrModel = new Flickr();
+	$flickrViewerController = new FlickrViewerController($flickrModel);
+	
+	if (isset($_GET['action'])) $flickrViewerController->{$_GET['action']}($_POST);
 
-    $flickrViewerView = new FlickrViewerView($flickrModel);
-    echo $flickrViewerView->output();
+	$flickrViewerView = new FlickrViewerView($flickrModel);
+	echo $flickrViewerView->output();
 
 ?>
 		</div>

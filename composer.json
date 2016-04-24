@@ -1,8 +1,8 @@
 {
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "zgetro/phpflickr": "*"
-    }
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"zgetro/phpflickr": "*"
+	}
 }
 
