@@ -1,0 +1,25 @@
+body {
+	background-color: #E6EFF2;
+}
+.fv-tag-input {
+	width: 83%;
+	float: left;
+	display: inline-block;
+}
+
+.fv-search-button {
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.fv-no-results {
+	text-align: center;
+}
+
+.fv-results-found {
+	text-align: center;
+}
+
+.fv-thumbnail {
+	padding: 2px;
+}

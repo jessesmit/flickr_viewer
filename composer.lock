@@ -1,0 +1,46 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "850cd3761eb7e5f0a43201963b6e892f",
+    "content-hash": "ae2dea65a708b6d0a4ca6cd06a53d6c4",
+    "packages": [
+        {
+            "name": "zgetro/phpflickr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zgetro/phpflickr.git",
+                "reference": "1e566327059e7ea1d889b91ba9d503d7a6286794"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zgetro/phpflickr/zipball/1e566327059e7ea1d889b91ba9d503d7a6286794",
+                "reference": "1e566327059e7ea1d889b91ba9d503d7a6286794",
+                "shasum": ""
+            },
+            "type": "non",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "general"
+            ],
+            "authors": [
+                {
+                    "name": "chirag"
+                }
+            ],
+            "description": "phpflickr is official client lib of php-client-flickr. here i just added composer file after fork it from dan-coulter/phpflickr. no any intension to harm official Licence",
+            "time": "2016-04-18 07:29:35"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
