@@ -29,12 +29,10 @@
 			
 			$this->searchTerm = $term;
 			
-			#Flickr API expects comma separated tag names. Realistically this will break if tags contain spaces
-			#and regardless I would prefer to use a widget such as http://xoxco.com/projects/code/tagsinput/.
-			$tags = str_replace(' ', ',', $term);
 
-			$search_criteria = array("tags"=>$tags,
-									 "tag_mode"=>"any",
+			$search_criteria = array("tags"=>$term,
+									 "tag_mode"=>"all",
+									 "sort"=>"relevance",
 									 "per_page"=>constant('PHOTOS_PER_PAGE'));
 
 			$results = $this->flickr->photos_search($search_criteria);

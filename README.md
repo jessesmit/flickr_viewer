@@ -6,7 +6,6 @@ Not implemented (potential, though unlikely, TODOs):
 - Pagination
 - Proper view for larger images
 - Flickr authentication for private photos
-- Better tag entry UI widget
 - Better results layout. Wrapped images is simple and responsive but far from elegant
 - General look and feel improvements
 - Any kind of automated testing
